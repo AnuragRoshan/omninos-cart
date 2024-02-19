@@ -23,6 +23,7 @@ function App() {
         <>
           <Routes>
             <Route exact path="/home" element={user ? <Home /> : <Login />} />
+            <Route exact path="/" element={user ? <Home /> : <Login />} />
             <Route exact path="/login" element={user ? <Home /> : <Login />} />
             <Route
               exact
